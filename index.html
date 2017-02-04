@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<base href="/">
+	<link rel="stylesheet" type="text/css" href="css/ed-grid-1.1.css" />
+	<link rel="stylesheet" type="text/css" href="css/estilos.css" />
+	<link rel="stylesheet" type="text/css" href="css/nav.css" />
+	<link rel="icon" type="image/png" href="favicon.png" />
+	<script src="js/w3data.js"></script>
+	<title>Proyecto TAU: Principal</title>
+</head>
+<body>
+	<div w3-include-html="includes/analyticstracking.html"></div>
+	<div w3-include-html="includes/Piwik.html"></div>
+
+	<div id="pagina" class="grupo">
+		<header class="grupo">
+			<div class="caja desde-base base-50">
+				<img src="images/logo.png" alt="logo" />
+			</div>
+			<div class="caja desde-base base-50 hasta-web">
+				<div id="toggle-menu" class="derecha icon-menu"></div>
+			</div>
+		</header>
+		
+		<div class="grupo">
+			<div id="sectionnav" class="caja desde-web web-2-8">
+				<div w3-include-html="includes/nav.html"></div>
+				<div w3-include-html="includes/socials-web.html"></div>
+			</div>
+				
+			<div class="caja desde-base web-6-8">
+				<div class="grupo">
+					<div class="caja desde-base base-50">
+						<img src="images/tau.png" alt="TAU" />
+					</div>
+					<div class="caja centrar-texto desde-base base-50">
+						<a href="descargas.html" title="Descargas" style="text-decoration: none;">
+							<div id="aniversario">
+								<p id="numero">10<sup>o</sup></p>
+								<p>Aniversario</p>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<h1 id="title">PROYECTO TAU</h1>
+				<h2 id="subtitle" class="derecha-texto">Gestión de Departamento TIC</h2>
+				<div id="content" class="caja"> <!--  centrar -->
+					<h3>¿ Qué es TAU ?</h3>
+					<b>TAU</b> nace como un producto hecho <b>por y para los Departamentos de Informática</b>. Se constituye como una herramienta
+					de <b>gestión completa</b>, que comprende tareas tan habituales como:
+					<ul>
+					<LI>Gestión de inventario del parque informático (ordenadores, impresoras, jetdirects, switches, etc.)</LI>
+					<li>Gestión de usuarios (que equipo utilizan, ubicación física, que aplicaciones disponen,etc)</li>
+					<li>Gestión de aplicaciones (inventario de aplicaciones software, autorizaciones de acceso, fichas técnicas, etc.)</li>
+					<li>Gestión de averías (de hardware, seguimiento, resolución, coste)</li>
+					<li>Gestión de almacén y control de fungibles (estado de almacén, pedidos, estadísticas de gasto)</li>
+					<li>Gestión de contactos (para contacto con proveedores, empresas colaboradoras,etc.)</li>
+					<li>Gestión de Biblioteca de medios (CDs, DVDs)</li>
+					<li>Servicio de Mensajería (para usuarios, entre usuarios de TAU, etc)</li>
+					<li>Integración con Directorio Activo (alta de usuarios automática, acceso via web)</li>
+					<li>Control Remoto (mediante UltraVNC para asistencia al usuario)</li>
+					<li>Gestor de incidencias (Zentrack)</li>
+					<li>Conexión Terminal Server (mediante applet java para administrar servidores)</li>
+					<li>Obtención de datos en tiempo real (mediante interfaz WMI)</li>
+					<li>Y mucho mas....(podéis ver el detalle de todas sus características en el apartado <b>Características</b>)</li>
+					</ul>
+					<h3>¿ Cúal es su origen ?</h3>
+					TAU nació como resultado de <i><b>"una necesidad no cubierta"</b></i> en el Departamento de Informática de la
+					Delegación de Medio Ambiente de Huelva, perteneciente a la Junta de Andalucía (organo administrativo de la comunidad autónoma de Andalucía dentro de España). Se cumple el refrán de que <b>"en casa del herrero, cuchara de palo"</b>, es decir, el Servicio de Informática participa en la informatización de muchas aplicaciones de la organización, automatizando los procesos, y obteniendo eficiencia en sus resultados. Sin embargo, hasta la fecha se carecía de herramientas pensadas para facilitar la <b>Gestión de un Departamento de Informática</b>, y a veces resultaba curioso ver las precarias herramientas que utilizabamos para "automatizar" nuestro trabajo. Por todo ello, y teniendo en cuenta de que nadie iba a hacer nada por remediarlo, se decidió la creación de un <b>"nuevo producto"</b> que pudiera satisfacer las necesidades del Departamento.
+					<br><br>Sus comienzos se remontan al <b>año 2006</b>, y todo empezó creando una interfaz web a una base de datos en Access para el control de inventario de equipos. Posteriormente se ha pasado a una interfaz completa via web, modular, basada en PHP + AJAX + MySQL, y cuya característica más importante, es que <b>evoluciona en base a las necesidades</b> que se van presentando. Ésta es quizás el <i><b>"mayor valor añadido"</b></i> de la aplicación, ya que es <b>"eminentemente práctica"</b>, tanto que resulta bastante "intuitiva" (todo lo que se necesita está en el lugar adecuado, en el momento esperado).
+					<br><br>Otra característica del producto, en comparación con lo "existente" hasta ese momento, es que está muy <b>orientada al "usuario"</b>. En nuestro trabajo de "soporte", fundamentalmente trabajamos con "usuarios", los cuales tienen asociadas unas "máquinas" sobre las que "dan incidencias". Por tanto, no se recoge una "fosilización" del parque informático disponible, sino una <b>"rica red de enlaces"</b> entre "usuarios", "equipos", "aplicaciones", y "ubicaciones"...Pero para entender ésto es mejor que probéis la aplicación ; )
+					<br><br>Como <b>inconveniente </b>de la aplicación, sin duda su mayor handicap sea que ha sido programado por "aficionados inexpertos" (nosotros vaya), con lo que nadie espere un código estructurado, limpio, y entendible a la primera....por poneros un ejemplo, se ha programado en PHP porque ninguno de nostros sabíamos programar en este lenguaje,...y así aprendíamos...No obstante, siendo sincero, tampoco está muy mal el código, y al menos, el <b>esqueleto de TAU</b> si está formalmente codificado siguiendo el Patrón MVC
+					<br><br>Sólo nos queda recomendaros que lo utilicéis para ver su potencial, y que por su puesto, estamos abiertos a todo tipo de comentarios y ayuda.
+					<br><br><b>¡ GRACIAS POR VUESTRA ATENCION !</b>
+				</div><!-- id="content" -->
+			</div><!-- class="web-5-6" -->
+		</div><!-- class="grupo" -->
+		<div w3-include-html="includes/socials-base.html"></div>
+		<footer id="footer" class="grupo">
+			<div class="caja centrar-contenido total">
+				<div w3-include-html="includes/footer.html"></div>
+			</div>
+		</footer>
+	</div><!-- id="pagina" -->
+	
+	<script>
+	w3IncludeHTML();
+	</script>
+	<script src="js/addRemoveClass.js"></script>
+
+</body>
+</html>

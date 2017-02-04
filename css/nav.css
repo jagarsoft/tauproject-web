@@ -1,0 +1,73 @@
+/*nav {
+	display: table;
+	width: 100%;
+}*/
+
+nav ul {
+	/*
+	max-height: 100%;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style: none;
+    transition: all 2s;
+    */
+    display: table;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+	/*display: inline-block;*/
+	float: left;
+	width: 100%; /*AJUSTAR A 50% o 33% SEGUN EL BREAKPOINT DE LA MEDIAQUERY*/
+	/*display: table-cell;*/
+    /*list-style: outside none none;*/
+    background: #314e6c;
+    line-height: 3rem;
+    padding: 0 1em;
+    /*display: block;*/
+    /*max-height: 0;*/
+    /*overflow: hidden;*/
+    /*box-shadow: 0 1px rgba(0,0,0,.2);*/
+    border-bottom: black 1px solid;
+}
+
+nav ul li a {
+	color: #fff;
+	display: inline-block;
+	padding: 0 1em;
+    text-decoration: none;
+}
+
+nav ul li::hover {
+	/*color: gray;*/
+	background-color: #4B6886; /* lighten 10% */
+	/* background-color: #64819F;  lighten 20% */
+
+	/* background-image: url("../images/go.png");
+	background-repeat: no-repeat;
+	background-position: center left; */
+}
+
+/* menu a 2 columnas */
+@media all and (min-width: 480px) {
+	nav ul li {
+		width: 50%;
+	}
+}
+
+/* menu a 3 columnas */
+@media all and (min-width: 768px) {
+	nav ul li {
+		width: 33%;
+	}
+}
+
+/* menu a 3 columnas */
+@media all and (min-width: 1024px) {
+	nav ul li {
+		width: 100%;
+	}
+}

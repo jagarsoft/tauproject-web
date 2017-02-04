@@ -1,0 +1,90 @@
+body {
+	background-color: #314e6c;
+	color: #000000;
+	/* 'Bitstream Vera Sans' looks nice with Linux, but ugly with Windows 
+	   and it's hard to read there */
+	/* font-family: 'Bitstream Vera Sans',Verdana,sans; */
+	font-family: verdana,sans;
+}
+
+#pagina {
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	background-color: white;
+	background-image: url("../images/bg.jpg");
+	background-repeat: repeat-x;
+}
+
+#aniversario {
+    font-size: 7vmin;
+    font-style: oblique;
+    font-weight: bold;
+    padding-top: 10%;
+    /*overflow: hidden;*/
+}
+
+#aniversario #numero {
+    text-align: center;
+}
+#aniversario p {
+    line-height: 50%;
+}
+
+a #aniversario {
+	/*text-decoration: none;*/
+    color: black;
+}
+
+nav {
+	background-image: url("../images/navstripe.png");
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+
+.icon-menu {
+	cursor: pointer;
+	font-size: 1.75em;
+}
+
+#title {
+    font-style: italic;
+    left: 220px;
+    margin: 0;
+    padding: 3px;
+    /*position: absolute;
+    top: 44px;*/
+}
+
+#subtitle {
+    color: gray;
+    font-size: small;
+    margin: 0;
+    padding: 2px;
+    /*position: absolute;
+    right: 120px;
+    top: 43px;*/
+}
+
+#content img {
+    border-color: grey;
+    border-style: dotted;
+    border-width: 1px;
+    margin-top: 20px;
+    max-width: 400px;
+}
+
+.socials {
+	margin-top: 15px !important;
+}
+
+.socials img {
+	max-width: 180px; // el width del QR
+}
+
+#footer {
+    border-top: 1px solid #cccccc;
+    color: gray;
+    font-size: x-small;
+    margin-top: 30px;
+    text-align: center;
+}

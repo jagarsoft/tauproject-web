@@ -1,0 +1,257 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<base href="/">
+	<link rel="stylesheet" type="text/css" href="css/ed-grid-1.1.css" />
+	<link rel="stylesheet" type="text/css" href="css/estilos.css" />
+	<link rel="stylesheet" type="text/css" href="css/nav.css" />
+	<link rel="icon" type="image/png" href="favicon.png" />
+	<script src="js/w3data.js"></script>
+	<title>Proyecto TAU: Caracteristicas</title>
+</head>
+<body>
+	<div w3-include-html="includes/analyticstracking.html"></div>
+	<div w3-include-html="includes/Piwik.html"></div>
+
+	<div id="pagina" class="grupo">
+		<header class="grupo">
+			<div class="caja desde-base base-50">
+				<img src="images/logo.png" alt="logo" />
+			</div>
+			<div class="caja desde-base base-50 hasta-web">
+				<div id="toggle-menu" class="derecha icon-menu"></div>
+			</div>
+		</header>
+		
+		<div class="grupo">
+			<div id="sectionnav" class="caja desde-web web-2-8">
+				<div w3-include-html="includes/nav.html"></div>
+				<div w3-include-html="includes/socials-web.html"></div>
+			</div>
+				
+			<div class="caja desde-base web-6-8">
+				<div class="grupo">
+					<div class="caja desde-web web-50">
+						<img src="images/tau.png" alt="TAU" />
+					</div>
+					<div class="caja centrar-texto desde-web web-50">
+						<a href="descargas.html" title="Descargas" style="text-decoration: none;">
+							<div id="aniversario">
+								<p id="numero">10<sup>o</sup></p>
+								<p>Aniversario</p>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<h1 id="title">PROYECTO TAU</h1>
+				<h2 id="subtitle" class="derecha-texto">Gestión de Departamento TIC</h2>
+				<div id="content" class="caja"> <!--  centrar -->
+					<h3>Principales características</h3>
+					En esta sección se pretende detallar con un poco más de profusión las distintas características y módulos disponibles de TAU, acompañado de capturas de pantalla para poderse hacer una idea. Previamente hay que destacar que TAU es una aplicación <b>"extensible"</b>, en el aspecto de que permite añadirle funcionalidad mediante <b>"nuevos módulos"</b>. Es decir, TAU ofrece un <b>framework básico</b>, que es usado por el resto de módulos para la interacción entre ellos. Podéis encontrar más detalles en el documento de <b>Arquitectura de TAU</b> en la carpeta <b>Documentación</b><br /><br />
+					En resumidas cuentas, esta es la funcionalidad que <b>YA</b> ofrece TAU:
+					<ul>
+					<li>En idioma Español</li>
+					<LI>Gestión de inventario del parque informático (ordenadores, impresoras, jetdirects, switches, etc)</LI>
+					<li>Gestión de usuarios (que equipo utilizan, ubicación física, que aplicaciones disponen,etc)</li>
+					<li>Gestión de aplicaciones (inventario de aplicaciones software, autorizaciones de acceso, fichas técnicas, etc.)</li>
+					<li>Gestión de extensiones telefónicas, grupos de captura, y rosetas</li>
+					<li>Gestión de averías (de hardware, seguimiento, resolución, coste)</li>
+					<li>Gestión de contactos (para contacto con proveedores, empresas colaboradoras,etc.)</li>
+					<li>Gestión de Biblioteca de medios (CDs, DVDs)</li>
+					<li>Servicio de Mensajería (entre usuarios de TAU para dejar recados, llamadas perdidas, visitas, etc.)</li>
+					<li>Gestión de almacén y control de fungibles (estado de almacén, pedidos, estadísticas de gasto)</li></l>
+					<li>Integración con Directorio Activo (alta de usuarios automática, administración del Directorio Activo vía web)</li>
+					<li>Control Remoto (mediante UltraVNC para asistencia al usuario)</li>
+					<li>Gestor de incidencias (Zentrack)</li>
+					<li>Conexión Terminal Server (mediante applet java para administrar servidores)</li>
+					<li>Obtención de datos en tiempo real (mediante interfaz WMI)</li>
+					<li>Notificaciones (para enviar mensajes a grupos de usuario por email, logonscript, net send, página web)</li>
+					<li>Notas, Calendario, Utilidades, Alertas, Correo electrónico, etc.</li>
+					<li>Estadísticas de Sincronización Remota</li>
+					<li>Vistas en paneles</li>
+					<li>Autenticación SSO con Dominio Windows, autenticación LDAP, etc.</li>
+					<li>Activación de módulos al gusto</li>
+					<li>TAU phone</li>
+					</ul>
+
+					<h3>En español</h3>
+					Este software está realizado integramente en Español. No tiene más causa de que es nuestro lenguaje natural, y en ningún momento se ha pensado en "traducirlo" a otros idiomas. El que se queje ; ), ya sabe, al ser software GPL bienvenida es su colaboración.<br />
+					<img style='margin-top:20px;margin-left:40%' src='images/spain.gif' />
+
+					<h3>Gestión de inventario</h3>
+					Este módulo es quizás el <b>módulo principal de TAU</b>. Su objetivo es gestionar el parque informático del Departamento. Es decir, registrar todos los datos sobre ordenadores, pantallas, impresoras, switches, direcciones ip, empresas, suministradores, garantías, ubicaciones físicas de los elementos, etc). Se trata de saber qué recursos dispone el departamento, quien los tiene asignado, y administrar todo el ciclo de vida de éstos a lo largo de su uso. Describir este módulo necesitaría de un apartado para el sólo, ya que es bastante extenso.<br /><br />La interfaz está basada en AJAX, y su principal virtud es que permite "navegar" entre las relaciones de los elementos (equipo, usuario, ubicación, aplicaciones) de forma agil y con distintas vistas. Para haceros una mínima idea os mostramos algunas capturas de pantalla:<br />
+					<h5>Pantalla de búsqueda principal</h5>
+					<img style='margin-top:20px;align:center' src='images/inventarioprincipalequipo.jpg' />
+					<h5>Ficha de Equipo y componentes que lo rodean</h5>
+			<img style='margin-top:20px;align:center' src='images/inventariofichaequipo.jpg' />
+					<h5>Explorador de objetos</h5>
+			<img style='margin-top:20px;align:center' src='images/inventarioexploradorequipo.jpg' />
+					<h5>Vista en árbol del Explorador de objetos</h5>
+			<img style='margin-top:20px;align:center' src='images/inventarioexploradorequipoarbol.jpg' />
+					<h5>Ubicación física de equipos</h5>
+			<img style='margin-top:20px;align:center' src='images/inventarioequipoubicacion.jpg' />
+					<h5>Gestión de Direcciones IP</h5>
+			<img style='margin-top:20px;align:center' src='images/inventarioip.jpg' />
+					<h5>Histórico de equipo</h5>
+			<img style='margin-top:20px;align:center' src='images/inventarioequipohistorico.jpg' />
+
+					<h3>Gestión de usuarios</h3>
+					La gestión de usuarios está integrada con el módulo anterior de gestión de inventario. La característica más notable de TAU es que está orientado al usuario, es decir, el usuario forma parte como un <b>item</b> de la base de datos de inventario. Gracias a este enfoque, podemos saber que equipos tiene asociada una persona, sino también que aplicaciones tiene autorizadas (y por tanto deberán estar instaladas en el ordenador asignado), su ubicación física, teléfonos de contacto, etc.
+					<h5>Ficha de Usuario y equipos que lo rodean</h5>
+			<img style='margin-top:20px;align:center' src='images/inventariofichausuario.jpg' />
+					<h5>Explorador de objetos</h5>
+			<img style='margin-top:20px;align:center' src='images/inventarioexploradorusuario.jpg' />
+					<h5>Aplicaciones y perfiles asociados al usuario</h5>
+			<img style='margin-top:20px;align:center' src='images/inventariousuarioaplicaciones.jpg' />
+
+					<h3>Gestión de aplicaciones</h3>
+					Junto a la información de equipos, usuarios, y ubicaciones, la base de datos de inventario se enriquece con el inventario de aplicaciones (ya sean productos software tal cual, o bien "aplicaciones corporativas" entendiendo estas últimas como el acceso a un sistema de información (sin tener en cuenta el software base que se precise para su acceso), o incluso carpetas de red (recursos compartidos). También se controla los perfiles disponibles para la aplicación, los usuarios que tienen asignado dichos perfiles, quien autoriza el acceso, y la posibilidad de generar "hojas de autorización de acceso a la aplicación para un determinado usuario". Así mismo se registran que IPs están reservadas para dicha aplicación, así como enlaces a Manual de usuario, Manual de Instalación, y Ficha Técnica (cuyo contenido se puede mantener en un gestor documental o en una WIKI).
+					<h5>Ficha Aplicación con Perfiles y Usuarios</h5>
+			<img style='margin-top:20px;align:center' src='images/inventariofichaaplicacion.jpg' />
+					<h5>Direcciones IPs asociadas a la aplicacion</h5>
+			<img style='margin-top:20px;align:center' src='images/inventarioaplicacionip.jpg' />
+					<h5>Grupos de autorización de acceso</h5>
+			<img style='margin-top:20px;align:center' src='images/inventarioaplicacionautorizacion.jpg' />
+					<h5>Generación de hoja de autorización</h5>
+			<img style='margin-top:20px;align:center' src='images/inventariohojaautorizacion.jpg' />
+
+					<h3>Gestión de extensiones y rosetas telefónicas</h3>
+					Añadido al inventario están las extensiones telefónicas (números de teléfono), categorias de salida, tecnología, grupos de captura, usuarios que tienen asociada dicha extensión, roseta de pared a la que están conectada, etc. En definitiva, poder registrar la información de parcheo de los armarios telefónicos y de red.
+					<h5>Ficha extensión telefónica</h5>
+			<img style='margin-top:20px;align:center' src='images/inventarioroseta.jpg' />
+					<h5>Generación de Listín Telefónico</h5>
+			<img style='margin-top:20px;align:center' src='images/inventariolistin.jpg' />
+
+					<h3>Gestión de averías</h3>
+					Una vez que se tienen inventariados los equipos, en dicho proceso se registra su fecha de compra, de fin de garantía, empresa suministradora, y empresa CRIJA de mantenimiento tras la garantía. Con esta información podemos saber si el equipo está en garantía y a quien dar el parte de incidencia a raíz de una avería. Por cada avería, permite registrar el diagnóstico, la resolución, el ticket de averia suministrado por el reparador, y el coste. De esta manera se registran todas las averías de equipos, y se permite visualizar el histórico de averias para un equipo, y averias pendientes.
+					<h5>Alta de avería</h5>
+			<img style='margin-top:20px;align:center' src='images/inventarionuevaaveria.jpg' />
+					<h5>Averias pendientes de cierre</h5>
+			<img style='margin-top:20px;align:center' src='images/inventarioaveriaspendientes.jpg' />
+					<h5>Informe de parte de avería</h5>
+			<img style='margin-top:20px;align:center' src='images/inventarioaveriainforme.jpg' />
+
+					<h3>Gestión de contactos</h3>
+					Los Departamentos de Informática precisan contactar con entes internos / externos (bien via telefónica, email, fax) para el desarrollo de su actividad (proveedores, CAUs, partners, etc.). Mediante este módulo se permite tener una agenda de contactos compartida para todo el Departamento.
+					<h5>Búsqueda de un contacto</h5>
+			<img style='margin-top:20px;align:center' src='images/contactos.jpg' />
+
+					<h3>Biblioteca de CDs y DVD</h3>
+					Normalmente, con la adquisición del nuevo equipamiento, los equipos vienen con CD/DVD de instalación de drivers, manuales, utilidades, que es preciso conservar para su referencia futura. Este módulo permite inventariar cada CD por categoría, o por área o descripción, lo que facilita enormemente la búsqueda.<br />
+					<h5>Búsqueda de CD de drivers por árbol</h5>
+			<img style='margin-top:20px;align:center' src='images/bibliotecaCD.jpg' />
+			
+					<h3>Servicio de Mensajería</h3>
+					Comunmente en un Dpto. de Informática trabajan un grupo de personas. Normalmente, debido a la naturaleza de nuestro trabajo, muchas de las veces no estamos en nuestro "puesto", ya que estamos haciendo un "trabajo de campo". Ocurre normalmente que el resto de nuestros compañeros atienden llamadas de teléfono, o visitas "nuestras", y simplemente nos dejan un post-it en el puesto para recordarnos quien nos ha llamado o visitado. Pues bien, este módulo pretende sustituir los post-it por un servicio electrónico de mensajería.<br />
+					<h5>Redacción de una llamada perdida</h5>
+			<img style='margin-top:20px;align:center' src='images/mensajeria.jpg' />
+
+					<h3>Gestión de almacén y control de fungibles</h3>
+					Una de las tareas más engorrosas de un Dpto. de Informática es la gestión de almacén y consumibles. Este módulo nos va a permitir saber cuantas existencias tenemos de cada fungible, registrar sus movimientos (y por lo tanto elaborar estadísticas de gasto y optimización de espacio en almacén). Realizar pedidos y controlar su recepción en base al estado del almacén. Además, a la hora de descontar un consumible, el sistema automáticamente nos dará un listado de los consumibles que utiliza un determinado equipo.<br />
+					<h5>Descuento de un toner por sustitución</h5>
+			<img style='margin-top:20px;align:center' src='images/inventariodescuentoconsumible.jpg' />
+					<h5>Estado de un pedido</h5>
+			<img style='margin-top:20px;align:center' src='images/inventariopedido.jpg' />
+					<h5>Ficha de fungible</h5>
+			<img style='margin-top:20px;align:center' src='images/inventariofichafungible.jpg' />
+					<h5>Estado del almacén</h5>
+			<img style='margin-top:20px;align:center' src='images/inventarioestadoalmacen.jpg' />
+
+					<h3>Integración con Directorio Activo</h3>
+					El entorno más habitual en un Dpto. de Informática es disponer de un Dominio Windows para la gestión de autenticación y acceso a carpetas o recursos de red. Mediante éste módulo se puede administrar las tareas más habituales del Directorio Activo via web (crear, editar, borrar usuarios, grupos, unidades organizativas, cambiar contraseñas, desbloquear usuarios, mover objetos, asignar usuarios a grupos, etc.). Además, el módulo permite otras funcionalidades añadidas como es la integración con el la ficha usuario de inventario (navegación TAU &lt;-&bt; Directorio Activo), ver en qué equipo ha inciado sesión un usuario, creación automática de usuarios en el Directorio Activo a partir de la información de inventario de TAU, etc.><br />
+					<h5>Ficha Usuario directorio activo</h5>
+			<img style='margin-top:20px;align:center' src='images/w2000ldapusuario.jpg' />
+					<h5>Plantilla de creación automática</h5>
+			<img style='margin-top:20px;align:center' src='images/w2000ldapplantilla.jpg' />
+					<h5>Localización del usuario </h5>
+			<img style='margin-top:20px;align:center' src='images/w2000ldapbusqueda.jpg' />
+
+			
+					<h3>Control Remoto</h3>
+					Para la asistencia a los usuarios (y sobre todo en los centros remotos), la utilización de una herramienta de control remoto permite resolver la mayor parte de las incidencias. Este módulo de TAU utiliza el software GPL UltraVNC (que entre otras cosa, permite autenticación Windows, transferencia de ficheros, drivers de aceleración). Desde TAU se puede instalar, y acceder por control remoto, a los equipos que pertenezcan a nuestro dominio<br />
+					<h5>Acceso por control remoto a equipo</h5>
+			<img style='margin-top:20px;align:center' src='images/controlremoto.jpg' />
+
+					<h3>Gestor de incidencias</h3>
+					Para la gestión adecuada de las incidencias de usuario es preciso de la obtención de una herramienta de help-desk que permita registrar y hacer un seguimiento de las incidencias. En este caso, se ha creado un módulo para la integración de TAU con el gestor de incidencias GPL Zentrack. La integración consiste en la autenticación SSO con dicho gestor, y el empotrado de la aplicación en la interfaz de TAU (posibilidad de ver nuevas incidencias sin necesidad de entrar en TAU<br />
+					<h5>Portal de incidencias para usuarios</h5>
+			<img style='margin-top:20px;align:center' src='images/portalincidencias.jpg' />
+					<h5>Aceso a Zentrack integrado con TAU</h5>
+			<img style='margin-top:20px;align:center' src='images/zentrack.jpg' />
+
+					<h3>Conexión Terminal Server</h3>
+					Independientemente de pode utilizar la herramienta de Control Remoto para administrar nuestros sevidores, nos puede interesar conectarnos mediante un cliente RDP de escritorio remoto (terminal server). Mediante un applet en Java, este módulo permite establecer conexiones RDP sin necesidad de instalar software previo<br />
+					<h5>Conexión Terminal Server</h5>
+			<img style='margin-top:20px;align:center' src='images/rdp.jpg' />
+
+					<h3>Obtención de datos en tiempo real</h3>
+					El inventario representa una información estática de los elementos que gestiona el Departamento. A veces es preciso contrastar dicha información estática (normalmente como se dice vulgarmente "metida a mano") con la real. TAU dispone de un módulo que permite "preguntar en remoto" al ordenador los datos que le son propios  (tales como memoria, disco, espacio restante, procesos corriendo, software instalado, tarjetas de red, MAC, etc...). Esta información se obtiene a través de la interfaz WMI de Windows, y permite obtener "en tiempo real" el estado del equipo.<br />
+					<h5>Datos en tiempo real de un equipo</h5>
+			<img style='margin-top:20px;align:center' src='images/amodatos.jpg' />
+					<h5>Procesos corriendo en el equipo</h5>
+			<img style='margin-top:20px;align:center' src='images/amoprocesos.jpg' />
+			
+					<h3>Notificaciones</h3>
+					Una de las tareas más habituales de un Dpto. de Informática es "comunicar" a sus usuarios algún evento, actualizacíón, etc. para su conocimiento. Los medios para ello pueden ser tan diversos como mandar un "net send", escribir a una "lista de correo", o la ejecución de un script en el inicio de sesión. Gracias a que en el "inventario" tenemos la base de datos de usuario, las aplicaciones que utiliza, este módulo se aprovecha de dichos datos para la creación de "listas dinámicas", es decir, posibilidad de enviar un mensaje sólo a los usuarios de una o más aplicaciones, etc. Las posibilidades que contempla son las de "net send", envio de correo electrónico, o mostar una página HTML a pantalla completa con el mensaje, en el inicio de sesión. Esta última posibilidad permite programar las fechas en que dicho mensaje será visible, así como cúantas veces el usuario debe poder ver el mensaje (para evitar machacar al usuario con el mismo mensaje). Para la edición del mensaje HTML, el módulo dispone de un editor HTML empotrado (al estilo WIKI) con lo que no se precisan conocimientos de HTML para la redación de la página. Algunas capturas para hacerse la idea<br />
+			
+					<h5>Creación de mensaje</h5>
+			<img style='margin-top:20px;align:center' src='images/notificacionescrear.jpg' />
+					<h5>Edición de mensaje HTML a partir de plantilla</h5>
+			<img style='margin-top:20px;align:center' src='images/notificacioneshtml.jpg' />
+					<h5>Estado de mensajes pendientes de visualizar</h5>
+			<img style='margin-top:20px;align:center' src='images/notificacionestado.jpg' />
+
+					<h3>Notas, Calendario, Utilidades, Alertas, Correo electrónico</h3>
+					Además de los módulos principales descritos en los puntos anteriores, TAU dispone de pequeñas utilidades tales como <b>Notas</b> que permite la creación de pequeños TODOs o notas post-it personalizadas por usuario. <b>Calendario</b> que permite ver el calendario actual y realizar anotaciones para recordatorio u ocupación del tiempo. <b>Utilidades</b>, para cosas tan simples como calcular la letra del DNI. <b>Alertas</b> que permite que "otros entes externos" manden alertas a TAU (como si fuese un syslog) para verlas dentro de la interfaz de TAU. <b>Correo electrónico</b> posibilidad de conexión a buzón entrante POP3 para avisarnos de mensajes nuevos, y ver los asuntos de los 3 últimos mensajes.
+					<h5>Uso de los módulos a la vez</h5>
+			<img style='margin-top:20px;align:center' src='images/todo.jpg' />
+
+					<h3>Estadísticas de sincronización remota RSYNC</h3>
+					Dentro de las tareas de Copia de Seguridad, utilizamos la herramienta RSYNC de sincronización remota. Dicha herramienta permite realizar copias de seguridad eficientes de servidores en ubicaciones remotas y con enlaces de comunicaciones lentos. Este módulo permite monitorizar la sincronizaciones realizadas y generar estadísticas para ver el crecimiento y evolución de la sincronización.
+					<h5>Estadísticas recolectadas</h5>
+			<img style='margin-top:20px;align:center' src='images/rsync.jpg' />
+
+					<h3>Vistas en paneles</h3>
+					Ya comentamos que TAU es un framework básico al cual se conectan una serie de <b>módulos</b> que son los que realmente ofrecen funcionalidad. Normalmente sólo se puede utilizar un módulo al mismo tiempo, sin embargo TAU dispone de una interfaz de paneles, que permite echar una "vista abreviada" de un módulo mientras se trabaja con otro (ver si hay correos nuevos, crear una nueva nota, buscar un contacto, etc...) todo ello sin abandonar la pantalla del módulo con el que hasta ese momento estábamos trabajando. Es como una vista rápida a los otros módulos. Se pueden crear tantos paneles como se deseen.
+					<h5>Vista en paneles</h5>
+			<img style='margin-top:20px;align:center' src='images/panelesvista.jpg' />
+					<h5>Administración de paneles</h5>
+			<img style='margin-top:20px;align:center' src='images/panelesadmin.jpg' />
+
+					<h3>Distintos módulos de autenticación</h3>
+					Para el control de acceso, TAU permite varias opciones, entre autenticación contra un LDAP, y contra un Dominio de Windows. En ambos casos el usuario se crea en TAU y la contraseña se contrasta contra el LDAP o el dominio Windows. Una vez autenticado el usuario, se crea un cookie de sesión que permite validar al usuario con mayor agilidad.<br /><br />
+					Existe la posibilidade de hacer un SSO con el Dominio de Windows, de forma que el usuario al acceder a la página web, automáticamente sea reconocido ya que previamente el usuario ha iniciado sesión en un dominio.
+					<h5>Diferentes métodos de autenticación</h5>
+			<img style='margin-top:20px;align:center' src='images/autenticacion.jpg' />
+
+
+					<h3>Activación selectiva de módulos</h3>
+					Puesto que TAU se compone de módulos, el administrador puede elegir cuales de ellos "activar" y cuales no. Es decir, cuales podrán utilizar los usuarios de TAU y cuales no. Toda la configuración de un módulo se realiza a través de la página de administración de módulos
+					<h5>Administración de módulos</h5>
+			<img style='margin-top:20px;align:center' src='images/administracionmodulos.jpg' />
+
+					<h3>TAUPhone</h3>
+					TAU dispone de una herramienta auxiliar que permite interactuar con la línea telefónica a través de un modem. De esta manera, cuando el operador recibe una llamada se le abrirá la página de TAU con el usuario que está llamando disponiendo de toda la información de soporte "antes de coger el teléfono". Por otra parte, mediante dicha herramienta, al pulsar sobre un número de teléfono dentro de TAU, automáticamente realizará la llamada a dicho número
+					<h5>Aplicación TAUPhone</h5>
+			<img style='margin-top:20px;align:center' src='images/tauphone.jpg' />
+			</div><!-- id="content" -->
+			</div><!-- class="web-5-6" -->
+		</div><!-- class="grupo" -->
+		<div w3-include-html="includes/socials-base.html"></div>
+		<footer id="footer" class="grupo">
+			<div class="caja centrar-contenido total">
+				<div w3-include-html="includes/footer.html"></div>
+			</div>
+		</footer>
+	</div><!-- id="pagina" -->
+	
+	<script>
+	w3IncludeHTML();
+	</script>
+	<script src="js/addRemoveClass.js"></script>
+
+</body>
+</html>
